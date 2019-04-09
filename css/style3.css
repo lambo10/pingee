@@ -1,0 +1,415 @@
+@charset 'UTF-8';
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
+
+
+	
+
+		body.is-loading * {
+			-moz-transition: none !important;
+			-webkit-transition: none !important;
+			-o-transition: none !important;
+			-ms-transition: none !important;
+			transition: none !important;
+			-moz-animation: none !important;
+			-webkit-animation: none !important;
+			-o-animation: none !important;
+			-ms-animation: none !important;
+			animation: none !important;
+		}
+
+	body,input,textarea,select
+	{
+		font-family: 'Source Sans Pro';
+		font-weight: 300;
+		color: #5d5d5d;
+	}
+
+	strong, b
+	{
+		color: #252122;
+		font-weight: 400;
+	}
+
+	i, em
+	{
+		font-style: italic;
+	}
+
+	sub
+	{
+		position: relative;
+		top: 0.5em;
+		font-size: 0.8em;
+	}
+	
+	sup
+	{
+		position: relative;
+		top: -0.5em;
+		font-size: 0.8em;
+	}
+
+	blockquote
+	{
+		border-left: solid 0.75em #dddddd;
+		padding: 1em 0 1em 1.5em;
+		font-style: italic;
+	}
+
+	h1, h2, h3, h4, h5, h6
+	{
+		color: #252122;
+		font-weight: 700;
+	}
+
+		
+
+	
+	
+		
+
+	br.clear
+	{
+		clear: both;
+	}
+
+	
+	
+		form
+		{
+		}
+		
+			form label
+			{
+				display: block;
+				color: #252122;
+				font-weight: 400;
+				margin: 0 0 0.5em 0;
+			}
+	
+			
+			form input[type=email],
+			form input[type=password],
+			form select,
+			form textarea
+			{
+				-webkit-appearance: none;
+				display: block;
+				border: 0;
+				padding: 0.75em 1em;
+				font-size: 1em;
+				border-radius: 5px;
+				border: solid 1px #dddddd;
+				background: #fff;
+				width: 100%;
+			}
+
+			form input[type=text]:focus,
+			form input[type=email]:focus,
+			form input[type=password]:focus,
+			form select:focus,
+			form textarea:focus
+			{
+				box-shadow: inset 0px 0px 1px 1px #43bff0;
+			}
+
+			form textarea
+			{
+				height: 15em;
+			}
+			
+			form .formerize-placeholder
+			{
+				color: #555 !important;
+			}
+
+			form ::-webkit-input-placeholder
+			{
+				color: #555 !important;
+			}
+
+			form :-moz-placeholder
+			{
+				color: #555 !important;
+			}
+
+			form ::-moz-placeholder
+			{
+				color: #555 !important;
+			}
+
+			form :-ms-input-placeholder
+			{
+				color: #555 !important;
+			}
+
+			form ::-moz-focus-inner
+			{
+				border: 0;
+			}
+
+	/* Tables */
+	
+		
+	/* Section/Article */
+	
+		section,
+		article
+		{
+			margin-bottom: 2.5em;
+		}
+		
+			section > :last-child,
+			article > :last-child
+			{
+				margin-bottom: 0;
+			}
+
+			section:last-child,
+			article:last-child
+			{
+				margin-bottom: 0;
+			}
+
+		
+
+	/* Box */
+
+		.box
+		{
+			background: #ffffff;
+			border-bottom: solid 1px #ccc;
+		}
+		
+			.box .image.featured
+			{
+				position: relative;
+				width: auto;
+			}
+
+	/* Button */
+		
+		input[type="button"],
+		input[type="submit"],
+		input[type="reset"],
+		.button
+		{
+			-webkit-appearance: none;
+			display: inline-block;
+			text-decoration: none;
+			cursor: pointer;
+			border: 0;
+			border-radius: 5px;
+			background: #d52349;
+			color: #fff !important;
+			font-weight: 700;
+			outline: 0;
+			-moz-transition: background-color .25s ease-in-out;
+			-webkit-transition: background-color .25s ease-in-out;
+			-o-transition: background-color .25s ease-in-out;
+			-ms-transition: background-color .25s ease-in-out;
+			transition: background-color .25s ease-in-out;
+		}
+
+			input[type="button"]:hover,
+			input[type="submit"]:hover,
+			input[type="reset"]:hover,
+			.button:hover
+			{
+				background: #e53359;
+			}
+			
+			input[type="button"]:active,
+			input[type="submit"]:active,
+			input[type="reset"]:active,
+			.button:active
+			{
+				background: #c51349;
+			}
+		
+			input[type="button"].alt,
+			input[type="submit"].alt,
+			input[type="reset"].alt,
+			.button.alt
+			{
+				background: #252122;
+			}
+
+				input[type="button"].alt:hover,
+				input[type="submit"].alt:hover,
+				input[type="reset"].alt:hover,
+				.button.alt:hover
+				{
+					background: #353132;
+				}
+				
+				input[type="button"].alt:active,
+				input[type="submit"].alt:active,
+				input[type="reset"].alt:active,
+				.button.alt:active
+				{
+					background: #151112;
+				}
+		
+			.button.icon
+			{
+			}
+			
+				.button.icon:before
+				{
+					opacity: 0.35;
+					position: relative;
+					top: 0.05em;
+					margin-right: 0.75em;
+				}
+
+	/* Image */
+
+		.image
+		{
+			display: inline-block;
+			outline: 0;
+		}
+		
+			.image img
+			{
+				display: block;
+				width: 100%;
+			}
+
+			.image.centered
+			{
+				display: block;
+				margin: 0 0 2em 0;
+			}
+
+				.image.centered img
+				{
+					margin: 0 auto;
+					width: auto;
+				}
+
+			.image.featured
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
+			.image.left
+			{
+				float: left;
+				margin: 0 2em 2em 0;
+			}
+
+
+
+	.icon {
+		position: relative;
+		text-decoration: none;
+	}
+
+		.icon:before {
+			-moz-osx-font-smoothing: grayscale;
+			-webkit-font-smoothing: antialiased;
+			font-family: FontAwesome;
+			font-style: normal;
+			font-weight: normal;
+			text-transform: none !important;
+		}
+
+		.icon > .label {
+			display: none;
+		}
+
+		.icon.featured
+		{
+			position: relative;
+			display: inline-block;
+			background-color: #d52349;
+			width: 9em;
+			padding: 1.75em 0 0.75em 0;
+			border-top-left-radius: 5px;
+			border-top-right-radius: 5px;
+			margin: 0 0 4.5em 0;
+			cursor: default;
+		}
+
+			.icon.featured:before
+			{
+				font-size: 4.5em;
+				line-height: 1em;
+				color: #fff;
+			}
+					
+			.icon.featured:after
+			{
+				content: '';
+				position: absolute;
+				bottom: -1.95em;
+				left: 0;
+				border-top: solid 2em #d52349;
+				border-left: solid 4.5em transparent;
+				border-right: solid 4.5em transparent;
+			}
+
+			.icon.featured.alt
+			{
+				background-color: #252122;
+			}
+			
+				.icon.featured.alt:after
+				{
+					border-top-color: #252122;
+				}
+
+			.icon.featured.alt2
+			{
+				background-color: #827a7c;
+			}
+			
+				.icon.featured.alt2:after
+				{
+					border-top-color: #827a7c;
+				}
+							
+/*********************************************************************************/
+/* Banner                                                                        */
+/*********************************************************************************/
+
+	#banner
+	{
+		
+		background-position: center center;
+		background-size: auto 100%;
+		background-repeat: no-repeat;
+		text-align: center;
+	}
+
+		#banner header
+		{
+			background-color: #252122;
+			background-color: rgba(34,30,31,0.98);
+		}
+		
+			#banner header h2
+			{
+				color: #fff;
+				font-weight: 700;
+			}
+			
+			#banner header p
+			{
+				color: #d52349;
+				padding: 0;
+				font-style: normal;
+				margin: 0;
+			}
+
+
+	#intro
+	{
+		text-align: center;
+	}
+	
